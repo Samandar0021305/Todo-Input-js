@@ -11,7 +11,7 @@ let col = document.getElementById("col")
 let ulEl = document.createElement("ul")
 let row = document.getElementById("row")
 
-TodoLesson()
+// TodoLesson()
 LessonAdd()
 
 function LessonAdd(){
@@ -50,7 +50,4 @@ btnAdd.innerHTML = "Add todo";
 form.appendChild(inputTodo)
 form.appendChild(btnAdd)
 col.appendChild(form)
-
-
-
-
+}
