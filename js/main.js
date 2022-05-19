@@ -50,4 +50,33 @@ btnAdd.innerHTML = "Add todo";
 form.appendChild(inputTodo)
 form.appendChild(btnAdd)
 col.appendChild(form)
+
+
+form.addEventListener("submit",function(event){
+    event.preventDefault()
+    let ulTodo = document.createElement("ul")
+    let liTodo = document.createElement("li")
+    let pElTodo = document.createElement("p")
+    let btnTodo = document.createElement("button")
+
+    pElTodo.style.marginLeft = "30px";
+    liTodo.style.display = "flex";
+    liTodo.style.marginTop = "15px";
+
+    pElTodo.textContent = inputTodo.value;
+    btnTodo.textContent = "Delete";
+    liTodo.appendChild(btnTodo)
+    liTodo.appendChild(pElTodo)
+    ulEl.appendChild(liTodo)
+    form.appendChild(ulTodo)
+
+    btnTodo.addEventListener("click",function(){
+        liTodo.remove()
+    })
+    inputTodo.value = null    
+})
+
 }
+
+
+
