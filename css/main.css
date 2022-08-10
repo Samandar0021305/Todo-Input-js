@@ -53,4 +53,7 @@ body{
 #btnEl{
     background-color: brown;
     border: none;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 10px;
 }
