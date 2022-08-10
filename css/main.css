@@ -20,3 +20,37 @@ body{
     justify-content: center;
     width: 100%;
 }
+#list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 10px;
+    width: 60%;
+    background-color: azure;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.7s ease-in;
+}
+
+#item:hover{
+    background-color: rgb(142, 167, 167);
+}
+
+#item p{
+    margin-top: 15px;
+    color: rgb(0, 72, 255);
+}
+
+#btnEl{
+    background-color: brown;
+    border: none;
+}
