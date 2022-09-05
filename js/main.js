@@ -44,12 +44,7 @@ function render(a){
     liEl.appendChild(DeleteBtn)
     list.appendChild(liEl)
 
-    DeleteBtn.addEventListener("click",()=>{
-       let k = prompt("o'chirilsinmi ?")
-       if(k == "ha" || k == "albatta" || k == "hmde" || k == "da" ){
-        liEl.remove()
-       }
-    })
+    
 }
 
 
