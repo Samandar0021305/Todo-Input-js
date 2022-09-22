@@ -44,6 +44,10 @@ function render(a){
     liEl.appendChild(DeleteBtn)
     list.appendChild(liEl)
 
+    DeleteBtn.addEventListener("click",()=>{
+        liEl.remove()
+    })
+
     
 }
 
